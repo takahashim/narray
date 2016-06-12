@@ -18,5 +18,6 @@ before_install:
   - sudo apt-get install ruby gcc ruby-dev rake make -y
 
 script:
-  - gem build numo-narray.gemspec
-  - gem install numo-narray-0.9.0.1.gem
+  - rake install
+  - rake spec
+
