@@ -18,6 +18,6 @@ before_install:
   - sudo apt-get install ruby gcc ruby-dev rake make -y
 
 script:
-  - rake install
-  - rake spec
+  - bundle exec rake install
+  - bundle exec rake spec
 
